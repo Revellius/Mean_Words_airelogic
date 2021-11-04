@@ -4,7 +4,7 @@ Program for airelogic tech test by Philip Richardson
 WHAT THIS PROGRAM DOES AND HOW TO RUN
  
 Included in this repository there are two files. The first file meanwords.py is a program which can be run from the command line.
-When run, it will prompt the user to enter an artist. Once given an artist is input it will ask the user if they would like to see the songs included in the calculation, it will then search the genius api for the top 20 entries involving that artist. To run the program enter
+When run, it will prompt the user to enter an artist. Once given an artist as an input, it will ask the user if they would like to see the songs included in the calculation, it will then search the genius api for the top 20 entries involving that artist. To run the program enter
 
 python3 meanwords.py
 
@@ -35,7 +35,7 @@ format_artist_name(artist):
   
 get_song_display_flag():
   
-  Asks the user whether they would like to see the songs being used in the calculation. If the user enters 'yes' it displays song titles as they are found and if t   the user enters 'no' it does not. If the user puts in anything which is not 'yes' or 'no' then it reprompts for a valid input.
+  Asks the user whether they would like to see the songs being used in the calculation. If the user enters 'yes' it displays song titles as they are found and if     the user enters 'no' it does not. If the user enters anything which is not 'yes' or 'no' then it reprompts for a valid input.
   
 get_song_data(artist):
    
@@ -43,11 +43,11 @@ get_song_data(artist):
 
 word_count(song_title):
 
-  Given a song title, this function counts the word in a song title and returns a word count.
+  Given a song title, this function counts the words in a song title and returns a word count.
   
 total_word_and_song_count(data,song_display_flag):
 
-  Given a dictionary of song data and the users song display flag, this produces the cumulative word count of the song titles in data as well as the number of         songs.
+  Given a dictionary of song data and the user's song display flag, this produces the cumulative word count of the song titles in data as well as the number of       songs.
   
 display_song_info(w_count,s_count):
 
